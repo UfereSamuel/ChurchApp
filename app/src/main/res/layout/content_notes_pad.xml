@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/notelist"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sammy.churchapp.notespad.NotesPad"
+    tools:showIn="@layout/activity_notes_pad">
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textViewTop"
+    android:layout_alignParentTop="true"
+    android:paddingBottom="35dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listNotePad"
+        android:layout_below="@+id/textViewTop"
+        android:background="#fff9c8"
+        android:divider="#d3d3d3"
+        android:dividerHeight="1sp"
+        android:footerDividersEnabled="true">
+    </ListView>
+
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btmLayout"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/create_note"
+        android:id="@+id/addnoteButton"/>
+</LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/homeToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listNotePad"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home_button"/>
+
+
+
+</RelativeLayout>
