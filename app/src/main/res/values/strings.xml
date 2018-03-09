@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ChurchApp</string>
+    <string name="app_name">Godlife Assembly</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_welcome_page">WelcomePage</string>
     <string name="title_activity_notes_pad">NotesPad</string>
@@ -14,4 +14,5 @@
         <item name="female">Female</item>
     </string-array>
     <string name="title_activity_bible">Bible</string>
+    <string name="title_activity_live_radio">LiveRadio</string>
 </resources>

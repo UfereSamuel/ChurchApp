@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sammy.churchapp.Streaming.LiveRadio;
 import com.example.sammy.churchapp.bible.Bible;
-import com.example.sammy.churchapp.membership.LoginPage;
 import com.example.sammy.churchapp.notespad.NotesPad;
 
 /**
@@ -20,11 +20,10 @@ import com.example.sammy.churchapp.notespad.NotesPad;
 
 public class WelcomeAdapter extends RecyclerView.Adapter<WelcomeAdapter.ViewHolder> {
 
-    private String[] text = {"Contact us", "SOD", "Dunamis Tv", "Audio Podcast", "Membership",
-            "Live Service", "Bible", "Notes", "Photogallery"};
-    private int[] image = {R.drawable.contactus, R.drawable.sod, R.drawable.dunamistv,
-            R.drawable.audiopodcast, R.drawable.membership, R.drawable.livestream, R.drawable.bible,
-    R.drawable.about, R.drawable.gallery};
+    private String[] text = {"Contact us", "Live Radio",
+            "Live Service", "Bible", "Notes", "About us", "Givings", "Pastor's Music"};
+    private int[] image = {R.drawable.contactus, R.drawable.audiopodcast, R.drawable.livestream,
+    R.drawable.bible, R.drawable.create_note, R.drawable.about, R.drawable.give, R.drawable.pastor};
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.welcome_page_menu, parent, false);
@@ -64,45 +63,41 @@ public class WelcomeAdapter extends RecyclerView.Adapter<WelcomeAdapter.ViewHold
                     if (getAdapterPosition()==0){
                         Toast.makeText((context), "Contacts selected", Toast.LENGTH_LONG).show();
                     }
-
                     if (getAdapterPosition()==1){
-                        Toast.makeText((context), "Seed of Destiny", Toast.LENGTH_LONG).show();
+                      Intent  radio = new Intent(context, LiveRadio.class);
+                        context.startActivity(radio);
+                        Toast.makeText((context), "Live Radio", Toast.LENGTH_LONG).show();
                     }
 
                     if (getAdapterPosition()==2){
-                        Toast.makeText((context), "Dunamis Tv", Toast.LENGTH_LONG).show();
-                    }
-
-                    if (getAdapterPosition()==3){
-                        Toast.makeText((context), "Audio Podcast", Toast.LENGTH_LONG).show();
-                    }
-
-                    if (getAdapterPosition()==4){
-                      Intent  reg = new Intent(context, LoginPage.class);
-                        context.startActivity(reg);
-                        Toast.makeText((context), "Membership", Toast.LENGTH_LONG).show();
-                    }
-
-                    if (getAdapterPosition()==5){
                         Toast.makeText((context), "Live Service", Toast.LENGTH_LONG).show();
                     }
 
-                    if (getAdapterPosition()==6){
+
+                    if (getAdapterPosition()==3){
                         Intent bible = new Intent(context, Bible.class);
                         context.startActivity(bible);
-                        Toast.makeText((context), "Bible Selected", Toast.LENGTH_LONG).show();
+                        Toast.makeText((context), "Bible", Toast.LENGTH_LONG).show();
                     }
 
-                    if (getAdapterPosition()==7){
+                    if (getAdapterPosition()==4){
                        Intent notes = new Intent(context, NotesPad.class);
                         context.startActivity(notes);
-
                         Toast.makeText((context), "Notes", Toast.LENGTH_LONG).show();
                     }
 
-                    if (getAdapterPosition()==8){
-                        Toast.makeText((context), "Gallery Selected", Toast.LENGTH_LONG).show();
+                    if (getAdapterPosition()==5){
+                        Toast.makeText((context), "About us", Toast.LENGTH_LONG).show();
                     }
+
+                    if (getAdapterPosition()==6){
+                        Toast.makeText((context), "Givings", Toast.LENGTH_LONG).show();
+                    }
+
+                    if (getAdapterPosition()==7){
+                        Toast.makeText((context), "Messages & Musics", Toast.LENGTH_LONG).show();
+                    }
+
 
 
                 }

@@ -20,9 +20,9 @@ public class SplashPage extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        TextView textView =(TextView) findViewById(R.id.time_date);
-        textView.setText(DateUtils.formatDateTime(context,System.currentTimeMillis(),
-                DateUtils.FORMAT_SHOW_TIME|DateUtils.FORMAT_SHOW_DATE|DateUtils.FORMAT_NUMERIC_DATE|DateUtils.FORMAT_SHOW_YEAR|DateUtils.FORMAT_12HOUR));
+//        TextView textView =(TextView) findViewById(R.id.time_date);
+//        textView.setText(DateUtils.formatDateTime(context,System.currentTimeMillis(),
+//                DateUtils.FORMAT_SHOW_TIME|DateUtils.FORMAT_SHOW_DATE|DateUtils.FORMAT_NUMERIC_DATE|DateUtils.FORMAT_SHOW_YEAR|DateUtils.FORMAT_12HOUR));
 
 
         new Handler().postDelayed(new Runnable() {

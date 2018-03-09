@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@drawable/background"
+    android:background="@drawable/glalogo"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.sammy.churchapp.WelcomePage"
     tools:showIn="@layout/activity_welcome_page">
@@ -18,19 +17,19 @@
         android:paddingRight="70dp"
         android:layout_marginTop="30dp">
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="15dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="The God-life Assembly"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textColor="#000000"
-                android:textAlignment="center"/>
-        </android.support.v7.widget.CardView>
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:cardCornerRadius="15dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="The God-life Assembly"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textAlignment="center"/>-->
+        <!--</android.support.v7.widget.CardView>-->
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView

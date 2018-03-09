@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/samuel/AndroidStudioProjects/ChurchApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/samuel/AndroidStudioProjects/ChurchApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_0c6063f06653bd335f807fd5f5e7dacf90e61d5f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/samuel/AndroidStudioProjects/ChurchApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0c108c958d4dc6ce7bfa54063d5af2a184d7875d">
+        <dex dex="/home/samuel/AndroidStudioProjects/ChurchApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d84ca1122ca4a6e72cfd5202f14982ed94581eae/classes.dex" />
+    </item>
+
+</items>
